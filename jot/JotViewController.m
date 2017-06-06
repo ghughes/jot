@@ -429,7 +429,7 @@
 
 - (void)jotTextViewFinishedEditingWithNewTextString:(NSString *)textString
 {
-    // this calls setTextString
+    // this calls setTextString, which updates the textEditView with the latest text
     self.textString = textString;
 }
 

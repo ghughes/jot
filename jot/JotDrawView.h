@@ -122,7 +122,7 @@
 @protocol JotDrawViewDelegate <NSObject>
 
 /**
- *  Called when the JotDrawView adds a new stroke
+ *  Called when the JotDrawView adds a new stroke to the history
  */
 - (void)jotDrawViewAddedStrokeHistory;
 

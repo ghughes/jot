@@ -160,7 +160,7 @@
 - (void)jotTextViewFinishedEditingWithNewTextString:(NSString *)textString;
 
 /**
- *  Called when the JotTextView adds a new text history
+ *  Called when the JotTextView adds a new text edit to the history
  */
 - (void)jotTextViewAddedTextHistory;
 
