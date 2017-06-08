@@ -263,6 +263,10 @@
         return;
     }
     
+    if ([self.textString isEqual: @""]) {
+        return;
+    }
+    
     switch (recognizer.state) {
         case UIGestureRecognizerStateBegan: {
             self.referenceCenter = self.textLabel.center;
@@ -288,6 +292,10 @@
 
 - (void)handlePinchOrRotateGesture:(UIGestureRecognizer *)recognizer
 {
+    if ([self.textString isEqual: @""]) {
+        return;
+    }
+    
     switch (recognizer.state) {
         case UIGestureRecognizerStateBegan: {
             if ([recognizer isKindOfClass:[UIRotationGestureRecognizer class]]) {
